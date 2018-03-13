@@ -45,7 +45,7 @@ function toggleFunction() {
     }
 }
 
-
+<!--
 // Used to toggle between the slides in Slidehows
 var slideIndex = [1,1,1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3"];
@@ -66,5 +66,5 @@ function showDivs(n, no) {
      x[i].style.display = "none";
   }
   x[slideIndex[no]-1].style.display = "block";
-}
+}-->
 
