@@ -18,6 +18,7 @@ html, body {
 
 
 
+
 .navColor{
   color: black;
 }
@@ -29,7 +30,7 @@ html, body {
 
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,6 +54,11 @@ html, body {
     background-image: url("Pictures/cities.jpg");
     min-height: 400px;
 }
+
+.bgimg-4 {
+    background-image: url("Pictures/scene.jpg");
+    min-height: 400px;
+}
 /*.navColor{
   color: white;
 }*/
@@ -62,7 +68,7 @@ html, body {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
 }
@@ -161,60 +167,65 @@ html, body {
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <p class="w3-xlarge w3-center w3-light-grey w3-padding-16">MY WORK</p>
   <p class="w3-center"><em>Here are some of my latest projects. </em></p>
+</div>
 
- 
 
  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Pictures/aria.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="Pictures/aria.jpg"  style="max-width:100%;" onclick="onClick(this)" class="w3-hover-opacity " alt="Aria: Air filter for third world countries">
       <div class="w3-container w3-light-grey">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>ARIA: UV FILTRATION DEVICE </b></p>
+        <!--
+        <ul>
+          <li> Learned the foundation and interworkings of engineering design</li>
+          <li> Addressed a health problem to prototype and test a biomedical device</li>
+        <li> Developed and pitched an associated business plan</li>
+<li> Created a UV filtration device, Aria, for third world countries.</li>
+</ul>-->
+<p>At the HK Maker Lab Program, I learned the foundation and interworkings of engineering design. We focused on addressing a health problem as we worked in teams to prototype and test a biomedical device, and develop an associated business plan. The program culminates in a pitch event to leading executives from the biomedical community. My team and I created a UV filtration device, Aria, for third world countries.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="Pictures/Binary.jpg" alt="Norway" style="width:100%;" class="w3-hover-opacity">
+      <img src="Pictures/Binary.jpg"  style="max-width:100%"onclick="onClick(this)"  class="w3-hover-opacity" alt="Binary and Gray Code Guessing Game">
       <div class="w3-container w3-light-grey">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>BINARY AND GRAY CODE GUESSING GAME</b></p>
+        <p>This game’s design is based on the combination of AutoCAD and an Arduino microcontroller. The game is a binary and gray code converter. The user had to guess the gray code or binary of the corresponding decimal number presented to him/her on the LCD display. The code included random number generator to randomize the decimal numbers and the number system. The game used a pushbutton user interface to identify 4-bit binary numbers. The game would wait for user input in order to start a round of the game, and then it would compare the input that the user provides and the correct answer to determine if the user won or lost.</p>
       </div>
     </div>
     <div class="w3-third w3-container">
-      <img src="Pictures/Stella.jpg" alt="Norway" style="height:100%" class="w3-hover-opacity">
+      <img src="Pictures/Stella.jpg"  style="max-width:100%; " onclick="onClick(this)" class="w3-hover-opacity" alt="Stella: messenger bot to send Stellar Lumens">
       <div class="w3-container w3-light-grey">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>STELLA</b></p>
+        <p>Stellar lumens is a cryptocurrency that allows for near-instant global payments for only a fraction of a cent. With current financial systems, such as Western Union and MoneyGram, participants have to pay steep fee's and often have to wait up to 3 business days to receive the money. To highlight the great features of Stellar lumens, we wanted to create an interface that simplifies the ability to send lumens across borders utilizing Facebook messenger. Stella interacts with the Stellar network through Facebook Messenger Main features: send lumens, check account balance, and create and verify new account.</p>
       </div>
     </div>
   </div>
-   <!--Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="Pictures/Stella.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stella: messenger bot to send Stellar Lumens">
+
+   <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Pictures/workout.jpg" style="max-width:100%;" onclick="onClick(this)" " class="w3-hover-opacity" alt="Work-Out Tracker">
+      <div class="w3-container w3-light-grey">
+        <p><b>WORKOUT TRACKER</b></p>
+        <p> I decided to create a program to track my workout progress and determine specific workout routines based on a desired body type. I learned to navigate through Java APIs fluidly and use hashmaps to store workouts with each lift and reps performed on specific days, storing workouts as the key and days as the value. In addition, I manipulated strings, arraylists, and arithmetic algorithms to return workout routines with specific sets, reps, and days depending on user’s goals. The Workout Trakcer is a simple Java program to keep track of personal workout routines, highest sets and reps, body fat percentage, and calories burnt, calculates the amount of calories one needs to lose and creates a specific workout routine with meal plans depending on user’s goals, and provides motivational messages to push the user to continue to reach their goals</p>
+      </div>
     </div>
-
-    <div class="w3-col m3">
-      <img src="Pictures/Workout.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Work-Out Tracker">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Pictures/County.jpg" style="max-width:100%;" onclick="onClick(this)" class="w3-hover-opacity" alt="County the Counting Turtle">
+      <div class="w3-container w3-light-grey">
+        <p><b>COUNTY THE COUNTING TURTLE</b></p>
+        <p>County the Counting Turtle is a toy that teaches a toddler how to count through interaction. Our design incorporates a turtle body, worm gear, rotational movements, path-tracing, and visual display.  The shell is connected to the back of the toy, acting like a hinge-like cap. The worm gear connects to the front axle of the wheels and the mid-center of the rotating plate; therefore, the plate rotates in the same ratio of the rotation of the wheels. On the rotating plate, we have nine half-arcs that are equidistant from each other and from the center of the rotating plate. On each of the arcs, we have an organic toy fish that traces through the path of the arc. The child can bring down the fish until it touches the rotating plate. Each face of the fish displays an amount of stars pertaining to the number on the plate. The overall design works by rolling the turtle across until a number appears on the slot of the plate.</p>
+      </div>
     </div>
-
-    <div class="w3-col m3">
-      <img src="Pictures/aria.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aria: Air filter for third world countries">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="Pictures/Binary.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Binary and Gray Code Guessing Game">
-    </div>
-
-
-     <div class="w3-col m3">
-      <img src="Pictures/County.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="County the Counting Turtle">
+    <div class="w3-third w3-container">
+      <img src="Pictures/Coming.jpg" style="max-width:100%; " onclick="onClick(this)" class="w3-hover-opacity" alt="Coming">
+      <div class="w3-container w3-light-grey">
+        <p><b></b></p>
+        <p></p>
+      </div>
     </div>
   </div>
-
-  </div>
-</div>
-
+     
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -224,12 +235,70 @@ html, body {
   </div>
 </div>
 
+
+
+
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">FUN</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <p class="w3-xlarge w3-center w3-light-grey w3-padding-16"> MY JOY</p>
+</div>
+
+<div class = "w3-border w3-center">
+  <p class="w3-center"><em>  FAMILY</em></p>
+  <img src="Pictures/mom.jpg" style="max-width:60%;" class="w3-hover-opacity  w3-white w3-padding-16 alt="Liondance">
+  </div>
+
+
+  <div class = "w3-border w3-center">
+  <p class="w3-center"><em>  FRIENDS</em></p>
+  <img src="Pictures/friends.jpg" style="max-width:60%;" class="w3-hover-opacity  w3-white w3-padding-16 alt="Liondance">
+  </div>
+
+ <div class = "w3-border w3-center">
+  <p class="w3-center"><em>  FOOD</em></p>
+  <img src="Pictures/coconut.jpg" style="max-width:60%;" class="w3-hover-opacity  w3-white w3-padding-16 alt="Liondance">
+  </div>
+
+<div class = "w3-border w3-center">
+  <p class="w3-center"><em>  LION DANCE</em></p>
+  <img src="Pictures/liondance.jpg" style="max-width:60%;" class="w3-hover-opacity  w3-white w3-padding-16 alt="Liondance">
+  </div>
+
+    <div class = "w3-border w3-center">
+  <p class="w3-center"><em>  BASKETBALL</em></p>
+  <img src="Pictures/ball.jpg" style="max-width:60%;" class="w3-hover-opacity  w3-white w3-padding-16 alt="Liondance">
+  </div>
+
+   
+
+
+<!--
+<h4 class="w3-center w3-padding-32">Street</h4>
+  <div class="w3-col w3-container w3-padding-16 w3-center">
+    <img class="mySlides2" src="Pictures/liondance.jpg" style="width: 100%" alt="NYC">
+    <img class="mySlides2" src="Pictures/liondance2.jpg" style="width: 100%" alt="NYC">
+    <img class="mySlides2" src="media/philly-slideshow.jpg" style="width: 100%" alt="Philadelphia">
+    <img class="mySlides2" src="media/philly2-slideshow.jpg" style="width: 100%" alt="Philadelphia">
+    <img class="mySlides2" src="media/chitown-slideshow.jpg" style="width: 100%" alt="Chicago">
+
+
+    <button class="w3-button w3-black w3-opacity w3-display-left" style="position: static !important" onclick="plusDivs(-1, 1)">&#10094;</button>
+    <button class="w3-button w3-black w3-opacity w3-display-right" style="position: static !important" onclick="plusDivs(1, 1)">&#10095;</button>
+  </div>-->
+
+
+<div class="bgimg-4 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
 </div>
+
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
@@ -248,7 +317,7 @@ html, body {
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1+ (347)-524-3453<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: by2225@columbia.edu<br>
       </div>
-      <p>Shoot me a call <i class="fa fa-phone"></i>, or leave me a note <i class="fa fa-envelope"></i>:</p>
+      <p>Shoot me a call  <i class="fa fa-phone"></i>  or leave me a note  <i class="fa fa-envelope"></i></p>
      
     
       </form>
