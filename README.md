@@ -8,3 +8,4 @@ https://by2225.github.io/
 # To-Do:
 - Input a slide for my fun category
 - Tidy up the code
+- Separate the Css from html file
